@@ -1,6 +1,14 @@
 %hover {
-  transition: color 0.5s ease;
+  transition: 0.1s;
   &:hover {
-    color: #ee5514;
+    color: #df4759;
+  }
+}
+%card_hover {
+  transition: 0.4s;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(86, 181, 212);
+    color: #05093a;
   }
 }
