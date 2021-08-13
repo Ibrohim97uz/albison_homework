@@ -4,32 +4,1431 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Uyga vazifa</title>
+    <title>Mohirdev - onlayn ta'lim platformasi</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="fingers">
-      <div class="finger finger_first">
-        <div class="nail"></div>
-        <div class="line_1"></div>
-        <div class="line_2"></div>
+    <header class="site-header">
+      <div class="container-nav">
+        <nav class="d-flex justify-content-between site_navbar pt-4">
+          <a class="nav_logo" href="#">
+            <img src="./assets/img/site_logo.png" alt="" />
+          </a>
+          <ul
+            class="
+              nav_list
+              align-items-center
+              list-unstyled
+              text-white
+              d-flex
+              justify-content-between
+            "
+          >
+            <li class="nav_list-item">
+              <a class="nav_link" href="#">ASOSIY</a>
+            </li>
+            <li class="nav_list-item">
+              <a class="nav_link" href="#">KURSLAR</a>
+            </li>
+            <li class="nav_list-item nav_dropdown">
+              <a class="nav_link" href="#">PRAKTIKUM</a>
+              <div class="outside_nav-1">
+                <div class="inside_nav-1">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Front End Development</a></li>
+                    <li><a href="#">Full Stack Development</a></li>
+                    <li><a href="#">React</a></li>
+                    <li><a href="#">Java Developer</a></li>
+                    <li><a href="#">Cloud DevOps Engineer</a></li>
+                    <li><a href="#">Android Developer</a></li>
+                    <li><a href="#">IOS Developer</a></li>
+                    <li><a href="#">Project Management</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">SEO Manager</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav_list-item"><a class="nav_link" href="#">BLOG</a></li>
+            <li class="nav_list-item nav_dropdown">
+              <a class="nav_link" href="#">SAHIFALAR</a>
+              <div class="outside_nav-2">
+                <div class="inside_nav-2">
+                  <ul class="list-unstyled">
+                    <li><a href="#">Dashboardga Kirish</a></li>
+                    <li><a href="#">O'qituvchi bo'lishni istaysizmi?</a></li>
+                    <li><a href="#">Biz Haqimizda</a></li>
+                    <li><a href="#">Mentor/O'qituvchilar</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <span
+            class="
+              nav_button
+              d-flex
+              align-items-center
+              text-white
+              border border-white
+              py-1
+              px-4
+              fw-bold
+            "
+          >
+            <a href="#">Kirish</a> <span class="mx-2">|</span>
+            <a href="#">Ro'yxatdan o'tish</a>
+          </span>
+          <div class="burger_menu">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+          </div>
+        </nav>
+        <div class="nav_list_burger list-unstyled">
+          <li class="nav_list-item">
+            <a class="nav_link" href="#">ASOSIY</a>
+          </li>
+          <li class="nav_list-item">
+            <a class="nav_link" href="#">KURSLAR</a>
+          </li>
+          <li class="nav_list-item nav_dropdown">
+            <a class="nav_link" href="#">PRAKTIKUM</a>
+            <div class="outside_nav-1">
+              <div class="inside_nav-1">
+                <ul class="list-unstyled">
+                  <li><a href="#">Data Science</a></li>
+                  <li><a href="#">Front End Development</a></li>
+                  <li><a href="#">Full Stack Development</a></li>
+                  <li><a href="#">React</a></li>
+                  <li><a href="#">Java Developer</a></li>
+                  <li><a href="#">Cloud DevOps Engineer</a></li>
+                  <li><a href="#">Android Developer</a></li>
+                  <li><a href="#">IOS Developer</a></li>
+                  <li><a href="#">Project Management</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                  <li><a href="#">SEO Manager</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav_list-item"><a class="nav_link" href="#">BLOG</a></li>
+          <li class="nav_list-item nav_dropdown">
+            <a class="nav_link" href="#">SAHIFALAR</a>
+            <div class="outside_nav-2">
+              <div class="inside_nav-2">
+                <ul class="list-unstyled">
+                  <li><a href="#">Dashboardga Kirish</a></li>
+                  <li><a href="#">O'qituvchi bo'lishni istaysizmi?</a></li>
+                  <li><a href="#">Biz Haqimizda</a></li>
+                  <li><a href="#">Mentor/O'qituvchilar</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </div>
       </div>
-      <div class="finger finger_second">
-        <div class="nail"></div>
-        <div class="line_1"></div>
-        <div class="line_2"></div>
+
+      <div class="container">
+        <div class="content_wrapper w-50">
+          <h1 class="display-1 fw-bold text-white header_title">
+            Dasturlashga oid onlayn darslar
+          </h1>
+          <form action="#">
+            <input
+              type="text"
+              placeholder="Qidirish:"
+              class="w-100 bg-transparent"
+            />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
       </div>
-      <div class="finger finger_third">
-        <div class="nail"></div>
-        <div class="line_1"></div>
-        <div class="line_2"></div>
+    </header>
+
+    <div class="css_bootstrap">
+      <div class="container">
+        <h1 class="title fs-3">
+          HTML, CSS, Bootstrap o’rganishni hoziroq boshlang
+        </h1>
+        <div class="cards_little">
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/little_card_ulugbek.jpeg" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">HTMLda dasturlash</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Ulugbek Samigjonov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/ulugbekk-scc.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">CSS bo’yicha mukammal kurs (2021)</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Ulugbek Samigjonov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/ulugbekk-bootstrap.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">Bootstrap bo’yicha mukammal kurs (2021)</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Ulugbek Samigjonov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/maxresdefault.jpg" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <h1 class="fs-4">45 Minutda HTML5</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Zokir Rakhimov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="finger finger_fourth">
-        <div class="nail"></div>
-        <div class="line_1"></div>
-        <div class="line_2"></div>
-      </div>
-      <div class="finger finger_fifth"></div>
     </div>
+
+    <div class="samar">
+      <h1 class="title fs-3">Samar Badriddinov</h1>
+      <div class="container">
+        <div class="cards_big">
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/samar_js.jpeg" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">
+                React JS To’liq Kurs – “From 0 To Hero”. 5ta real loyiha
+              </h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Samar Badriddinov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>React.JS</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">200,000 UZS</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/samar_react.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">JavaScript To’liq Kurs – “From 0 to Hero”</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Samar Badriddinov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>React.JS</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">200,000 UZS</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="anvar">
+      <h1 class="title fs-3">Phyton kurslari</h1>
+      <div class="container">
+        <div class="cards_big">
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/anvar-2.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">Mukammal Telegram Bot</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Anvar Narzullaev</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Anvar Narzullaev</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">250,000 UZS</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/anvar-1.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">Maʼlumotlar tuzilmasi va algoritmlar</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Anvar Narzullaev</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Anvar Narzullaev</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/anvar-3.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">Dasturlash Asoslari. Python</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Anvar Narzullaev</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Anvar Narzullaev</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/anvar-4.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">Dasturlash Asoslari. Python</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Anvar Narzullaev</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Anvar Narzullaev</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="farhod">
+      <div class="container">
+        <h1 class="title fs-3">Farhod Dadajanov darslari</h1>
+        <div class="cards_little">
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/DADAJONOV-TYPESCRIPT.jpg" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">TypeScript asoslari</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Farhod Dadajonov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/DADAJONOV-GIT.jpg" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">Git versiya boshqaruv tizimi</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Farhod Dadajonov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/DADAJONOV-doker.jpg" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">Docker haqida batafsil</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Farhod Dadajonov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/DADAJONOV-tensorflow.jpg" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">TensorFlow.js ga kirish</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Farhod Dadajonov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/Farxod-DaDAJONOV-1.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">SOLID Tamoyillari</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Farhod Dadajonov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/DADAJONOV-go.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">GO dasturlash tili</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Farhod Dadajonov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/DADAJONOV-core.jpg" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">ASP .Net Core MVC – batafsil</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Farhod Dadajonov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="animation">
+      <h1>
+        Mohir
+        <span></span>
+        bo'lish uchun ilk qadamlar
+      </h1>
+    </div>
+
+    <div class="thebest">
+      <h1 class="text-center">Mohirlar taklif qilayotgan pullik kurslar</h1>
+      <div class="container">
+        <div class="cards_big">
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/PHP-dasturlash.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">Php dasturlash tili asoslari</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Ahmadjon Xashimov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Backend dasturlash</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">250,000 UZS</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/From-scratch-to-end.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">
+                HTML, CSS, Bootstrap, JS 7 loyiha (From scratch to end)
+              </h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Mukhammadrasul Nurmukhamedov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Pullik kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">250,000 UZS</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/C-dasturlash.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">C++ dasturlash asoslari</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Mohirdev</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Foundation</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">300,000 UZS</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/mohirdev.uz-2.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">StartDroid – Android ilovalar tuzish</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Javohir Yakubov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Mobil dasturlash</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">300,000 UZS</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/samar_react.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">JavaScript To’liq Kurs – “From 0 to Hero”</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Samar Badriddinov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>JavaScript</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">300,000 UZS</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/PHP-dasturlash.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">Php dasturlash tili asoslari</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Ahmadjon Xashimov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Backend dasturlash</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">250,000 UZS</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="javascript">
+      <h1 class="title">JavaScript kurslari</h1>
+      <div class="container">
+        <div class="cards_little">
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/javascript-1.jpg" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">Nodejsda amaliyot. Blog loyihasi</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Akhmad Kadirov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Backend dasturlash</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/DADAJONOV-TYPESCRIPT.jpg" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">TypeScript asoslari</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Farhod Dadajonov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/Farxod-DaDAJONOV-1.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">SOLID Tamoyillari</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Farhod Dadajonov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>Bepul kurslar</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">Bepul</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/samar_react.png" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">JavaScript To’liq Kurs – “From 0 to Hero”</h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Samar Badriddinov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>React.JS</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">200,000 UZS</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card border">
+            <div class="hover_img">
+              <img src="./assets/img/samar_js.jpeg" alt="" />
+              <div class="bgcolor bg-danger">
+                <button class="btn btn-light fw-bold bg-transparent text-white">
+                  Kirish
+                </button>
+              </div>
+            </div>
+            <div class="card_text">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h1 class="fs-4">
+                React JS To’liq Kurs – “From 0 To Hero”. 5ta real loyiha
+              </h1>
+              <ul class="category_list list-unstyled">
+                <li class="d-inline-block">Ustoz:</li>
+                <li class="d-inline-block">
+                  <span>Samar Badriddinov</span>
+                </li>
+                <li class="d-inline-block">in</li>
+                <li class="d-inline-block"><span>React.JS</span></li>
+              </ul>
+            </div>
+            <div class="buttons d-grid align-items-center">
+              <div class="price border fw-bold fs-4">200,000 UZS</div>
+              <div class="submit border text-danger">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="telegram_bot">
+      <div class="wrapper bg-white">
+        <div class="container p-5">
+          <h1 class="text-primary"><a href="#">Mukammal Telegram Bot</a></h1>
+          <p>
+            <strong>Pythonda Mukammal Telegram</strong> bot yaratish kursiga
+            xush kelibsiz.
+          </p>
+          <div class="time">
+            <h1>
+              48 <br />
+              <span>days</span>
+            </h1>
+            <h1>
+              14 <br />
+              <span>Hours</span>
+            </h1>
+            <h1>
+              45 <br />
+              <span>Minutes</span>
+            </h1>
+            <h1>
+              45 <br />
+              <span>Seconds</span>
+            </h1>
+            <button type="button" class="btn btn-danger fw-bold">
+              Hoziroq ro’yXatdan o’ting
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="categories">
+      <h1 class="text-center display-3 fs-3">
+        Mohir tanlovlarni kategoriyalarga ko’ra amalga oshiring
+      </h1>
+      <div class="container">
+        <div class="category_inside d-grid">
+          <div class="category">
+            <img src="./assets/img/category_1.png" alt="" />
+            <p>Programming</p>
+          </div>
+          <div class="category">
+            <img src="./assets/img/category_2.png" alt="" />
+            <p>Backend dasturlash</p>
+          </div>
+          <div class="category">
+            <img src="./assets/img/category_3.png" alt="" />
+            <p>Full Stack</p>
+          </div>
+          <div class="category">
+            <img src="./assets/img/category_4.png" alt="" />
+            <p>Web Development</p>
+          </div>
+          <div class="category">
+            <img src="./assets/img/category_5.png" alt="" />
+            <p>Python</p>
+          </div>
+          <div class="category">
+            <img src="./assets/img/category_6.png" alt="" />
+            <p>Foundation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="teacher d-flex align-items-center justify-content-center">
+      <div class="container d-grid template align-items-center">
+        <h1 class="fs-3 text-white">
+          O’qituvchi bo’lib, minglab talabalar bilan bilimlaringizni
+          o’rtoqlashing
+        </h1>
+        <button class="btn btn-light button">
+          <i class="fas fa-user-graduate p-3"></i> O’qituvchi bo’lish
+        </button>
+      </div>
+    </div>
+
+    <div class="comments">
+      <div class="container">
+        <h1 class="text-center fs-4 mb-5">
+          Minglab foydalanuvchilardan iborat hamjamiyat.
+        </h1>
+        <div class="comment_wrapper">
+          <div class="comment">
+            <i>
+              “ Assalomaleykum hammaga zor bolibdi ishlarizga rivoj bersin
+              o’zbek dasturchilaridan hech birida open source kurslarni ozi yoq
+              hammasi pullik sotishadi oddiy dasturlash asoslarini o’zini ham
+              pullik qilib sotayotganlari bor men juda xursand bo’ldim bizdek
+              yoshlarni rivojlanishida katta yordam qilyapsiz.“
+            </i>
+            <ul class="list-unstyled mt-5">
+              <li><h1 class="fs-4">Tolib Narzullaev</h1></li>
+              <li>@TNweb_Developer</li>
+            </ul>
+          </div>
+          <div class="comment">
+            <i>
+              “Assalomu alaykum va rahmatulloh. Ustoz Olloh rozi bo‘lsin. Inson
+              vafotidan keyin ham unga ajr borib turadigan 3 ta amaldan biri
+              foydali ilmdir. Katta rahmat. O‘zi kuch quvvat bersin. Ustoz
+              ilmingizdan ancha foyda ko‘ryapmiz.”
+            </i>
+            <ul class="list-unstyled mt-5">
+              <li><h1 class="fs-4">Ibratbek Ruziboyev</h1></li>
+              <li>@Ibratbek_Ruziboyev</li>
+            </ul>
+          </div>
+          <div class="comment">
+            <i>
+              “ Bir mo’min sifatida ilmingiz bilan foydalik ilm berayapsiz,
+              Alloh dilizdagi o’ylagan niyatlarizdan ham afzaliga yetishtirsin.
+              Sanjar.”
+            </i>
+            <ul class="list-unstyled mt-5">
+              <li><h1 class="fs-4">Sanjar Sanakulov</h1></li>
+              <li>@SanjarSanakulov</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="container d-grid template-3">
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/card-1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h1 class="card-title fs-5 text-danger">Axborot Texnologiya</h1>
+            <p class="card-text">
+              Mohirlar uchun yana bir foydali masterklass.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/card-2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h1 class="card-title fs-5 text-danger">Axborot Texnologiya</h1>
+            <p class="card-text">IT sohasining kelajagi bormi?</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/card-3.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h1 class="card-title fs-5 text-danger">Axborot Texnologiya</h1>
+            <p class="card-text">
+              Data Science va Sun’iy Intelekt kursimizdan ro’yxatdan o’tganlar
+              soni 50 kishiga yaqinlashdi.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/card-4.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h1 class="card-title fs-5 text-danger">Axborot Texnologiya</h1>
+            <p class="card-text">
+              Mohirlar uchun Data Science va Sun’iy Intelekt praktikum darslar
+              tashkil qilingani haqida ma’lumot berilgandi.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/card-5.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h1 class="card-title fs-5 text-danger">Axborot Texnologiya</h1>
+            <p class="card-text">
+              Assalom alaykum hurmatli do’stlar, inshaalloh, ertaga mohirdev
+              Youtube va Facebook kanalida Data Science va Sun’iy Intellekt
+              yo’nalishidagi praktikumni e’lon qilamiz.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./assets/img/card-2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h1 class="card-title fs-5 text-danger">Axborot Texnologiya</h1>
+            <p class="card-text table-hover">Mohirdev.</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="btn-toolbar button_wrapper justify-content-center"
+        role="toolbar"
+        aria-label="Toolbar with button groups"
+      >
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn_temp btn-primary">1</button>
+          <button type="button" class="btn btn_temp border mx-2">2</button>
+          <button type="button" class="btn btn_temp border mx-2">3</button>
+          <button type="button" class="btn btn_temp border mx-2">4</button>
+          <button type="button" class="btn btn_temp border mx-2">
+            Keyingi >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer_inside d-grid">
+          <div class="phone">
+            <p>
+              O'z bilimlaringizni minglab talabalar bilan o'rtoqlashing va
+              <br />
+              Mohirdev bilan oylik imtiyozlardan foydalaning.
+            </p>
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+998990000000">+998990000000</a>
+            <br />
+            <i class="fas fa-mail-bulk"></i>
+            <a href="mailto:info:mohirdev.uz">mohirdev.uz</a>
+          </div>
+          <ul class="list-unstyled">
+            <h2 class="mb-2">Platform</h2>
+            <li><a href="#">Kurslar</a></li>
+            <li><a href="#">Pullik Kurslar</a></li>
+            <h2 class="my-4">Kompaniya</h2>
+            <li><a href="#">Biz Haqimizda</a></li>
+            <li><a href="#">Maqolalar</a></li>
+          </ul>
+          <ul class="list-unstyled">
+            <h2 class="mb-2">O'qituvchilar</h2>
+            <li><a href="#">O'quvchilar muvaffaqiyati</a></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li class="my-2"><a href="#">Mohirlar jamiyati (Discord)</a></li>
+            <li class="my-2"><a href="#">Mohirlar jamiyati (Telegram)</a></li>
+            <li class="my-2"><a href="#">Telegram kanal</a></li>
+            <li class="my-2"><a href="#">Savol va takliflar uchun bot</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright mt-5">
+      <div class="container">
+        <div class="copyright_inside d-flex justify-content-between">
+          <p>2021 Mohirdev. All Rights Reserved.</p>
+          <div class="payme">
+            <span>Xavfsiz To'lov:</span>
+            <img src="./assets/img/payme.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
