@@ -1,713 +1,423 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <title>Chocolates</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
-      rel="stylesheet"
-    />
   </head>
-  <body class="body">
-    <header class="p-4">
-      <div class="container-sp border-bottom">
-        <div class="d-flex justify-content-between">
-          <ul class="list-unstyled d-flex">
-            <li>
-              <a class="text-black nav-items text-decoration-none me-4" href="#"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a class="text-black nav-items text-decoration-none me-4" href="#"
-                >About</a
-              >
-            </li>
-            <li>
-              <a class="text-black nav-items text-decoration-none me-4" href="#"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a class="text-black nav-items text-decoration-none me-4" href="#"
-                >Login</a
-              >
-            </li>
-          </ul>
-          <ul class="list-unstyled d-flex justify-content-between">
-            <li class="icons">
-              <a href="#"><i class="fab fa-twitter text-dark"></i></a>
-            </li>
-            <li class="icons">
-              <a href="#"><i class="fab fa-facebook text-dark"></i></a>
-            </li>
-            <li class="icons">
-              <a href="#"><i class="fab fa-instagram text-dark"></i></a>
+  <body>
+    <header>
+      <!-- navbar start  -->
+      <div class="container-95">
+        <div class="navbar">
+          <ul class="nav-list">
+            <li><a href="#">Find Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Travel Retail</a></li>
+            <li onclick="countryShow(),rotate(rotate1)" class="intl">
+              <a href="#">INTL Website</a>
+              <i class="fas fa-angle-up rotated1"></i>
+              <ul class="countries">
+                <li><a href="#">Australia</a></li>
+                <li><a href="#">Austria</a></li>
+                <li><a href="#">Brasil</a></li>
+                <li><a href="#">Bulgaria</a></li>
+                <li><a href="#">Canada</a></li>
+                <li><a href="#">China</a></li>
+                <li><a href="#">Czech Republic</a></li>
+                <li><a href="#">France</a></li>
+                <li><a href="#">Germany</a></li>
+                <li><a href="#">Hungary</a></li>
+                <li><a href="#">Italy</a></li>
+                <li><a href="#">Japan</a></li>
+                <li><a href="#">Nordic</a></li>
+                <li><a href="#">Poland</a></li>
+                <li><a href="#">Russia</a></li>
+                <li><a href="#">South Africa</a></li>
+                <li><a href="#">Spain</a></li>
+                <li><a href="#">Switzerland</a></li>
+                <li><a href="#">United Kingdom</a></li>
+                <li><a href="#">USA</a></li>
+                <li><a href="#">All other countries</a></li>
+              </ul>
             </li>
           </ul>
         </div>
       </div>
-      <div class="nav_bottom py-4">
-        <div class="container-sp">
-          <div class="row d-flex align-items-center">
-            <div class="col-md-2 col-12 text-center text-md-start">
-              <a href="#">
-                <img src="./assets/img/logo.png" alt="" />
-              </a>
-            </div>
-            <div class="col-md-8">
-              <form class="search-form d-flex justify-content-between">
-                <select class="form-select bg-black text-white p-0">
-                  <option value="1">All</option>
-                  <option value="1">Denim</option>
-                  <option value="1">Men</option>
-                  <option value="1">Women</option>
-                </select>
-                <input type="text" placeholder="Search..." / id="search-input"
-                class="p-0" >
-                <button
-                  class="submit"
-                  type="submit"
-                  id="search-submit"
-                ></button>
-              </form>
-            </div>
-            <div class="col-2 d-flex justify-content-end person-cart">
-              <a href="#" class="d-inline-block me-4 text-black icon">
-                <i class="fas fa-user fa-2x"></i>
-              </a>
-              <a
-                href="#"
-                class="d-inline-block text-decoration-none text-black icon"
-                id="cart"
-              >
-                <i class="fas fa-shopping-cart fa-2x"></i>
-                <i class="number">0</i>
-              </a>
-            </div>
+      <!-- navbar start end -->
+
+      <!--middle header start -->
+      <div class="container-95">
+        <div class="middle-header">
+          <div onclick="burgerShow()" class="burger-menu">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
           </div>
+          <a class="logo" href="#">
+            <img src="./assets/img/logo.png" alt="" />
+          </a>
+          <form action="#">
+            <input type="text" name="search-input" placeholder="Search" id="" />
+            <i class="fas fa-search"></i>
+          </form>
+          <a class="location-header" href="#">
+            Find Us <i class="fas fa-map-marker-alt"></i
+          ></a>
         </div>
       </div>
+      <!--middle header end -->
+      <div class="burger-lists">
+        <ul class="bottom-header-list">
+          <li class="bottom-header-chocolate">
+            <a class="chocolate-link" href="#">OUR CHOCOLATES</a>
+            <i class="fas fa-angle-up world"></i>
+          </li>
+
+          <li><a href="#">STORE LOCATOR</a></li>
+          <li class="lindt">
+            <a class="lindt-link" href="#">WORLD OF LINDT</a>
+            <i class="fas fa-angle-up chocolate"></i>
+          </li>
+        </ul>
+      </div>
+      <!-- bottom header start -->
+      <div class="bottom-header">
+        <div class="container-95">
+          <ul class="bottom-header-list">
+            <li class="bottom-header-chocolate">
+              <a class="chocolate-link" href="#">OUR CHOCOLATES</a>
+              <i class="fas fa-angle-up world"></i>
+              <div class="world-lists">
+                <ul>
+                  <li class="title">ALL PRODUCTS</li>
+                </ul>
+                <ul>
+                  <li class="title">OUR BRANDS</li>
+                  <li><a href="#">Lindor</a></li>
+                  <li><a href="#">Excellence</a></li>
+                  <li><a href="#">Pralines Collection</a></li>
+                  <li><a href="#">Creation</a></li>
+                  <li><a href="#">Hello</a></li>
+                </ul>
+                <ul>
+                  <li class="title">GIFT IDEAS</li>
+                </ul>
+                <ul>
+                  <li class="title">CHOCOLATE TYPE</li>
+                  <li><a href="#">Dark</a></li>
+                  <li><a href="#">White</a></li>
+                  <li><a href="#">Milk</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li><a href="#">STORE LOCATOR</a></li>
+            <li class="lindt">
+              <a class="lindt-link" href="#">WORLD OF LINDT</a>
+              <i class="fas fa-angle-up chocolate"></i>
+              <div class="lindt-lists">
+                <ul>
+                  <li class="title">SUSTAINABILITY</li>
+                  <li><a href="#">Lindt Farming Program</a></li>
+                  <li><a href="#">Lindt Corporate</a></li>
+                </ul>
+                <ul>
+                  <li class="title">RECIPES & PAIRINGS</li>
+                  <li><a href="#">Chocolate Recipes</a></li>
+                  <li><a href="#">Pairings</a></li>
+                </ul>
+                <ul>
+                  <li class="title">THE LINDT DIFFERENCE</li>
+                  <li><a href="#">The Finest Cocoa</a></li>
+                  <li><a href="#">Unique Roasting and Grinding</a></li>
+                  <li><a href="#">Conching - The Lindt Invention</a></li>
+                  <li><a href="#">The Best Ingredients</a></li>
+                  <li><a href="#">Finishing With Perfection</a></li>
+                  <li><a href="#">Master Chocolatier</a></li>
+                </ul>
+                <ul>
+                  <li class="title">LINDT HISTORY</li>
+                  <li><a href="#">Lindt History</a></li>
+                  <li><a href="#">Gold Bunny History</a></li>
+                  <li><a href="#">Lindor History</a></li>
+                </ul>
+                <ul>
+                  <li class="title">LINDT AMBASSADOR</li>
+                  <li><a href="#">Roger Federer</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- bottom header end -->
     </header>
 
-    <div class="mobile-nav bg-black p-3">
-      <div class="container d-flex justify-content-between">
-        <a href="#" class="text-white"> <i class="fas fa-user fa-2x"></i></a>
-        <a onclick="show()" href="#" class="burger_menu text-white"
-          ><i class="fas fa-bars fa-2x"></i
-        ></a>
-
-        <a
-          href="#"
-          class="
-            d-inline-block
-            position-relative
-            text-decoration-none
-            icon
-            text-white
-          "
-          id="cart"
-        >
-          <i class="fas fa-shopping-cart fa-2x"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="mobile-menu position-absolute top-0 w-100 bg-black h-100">
-      <div class="container">
-        <div class="row mt-5">
-          <div class="col text-center text-white fs-1">
-            <div onclick="hide()" class="span-wrapper position-relative d-inline-block">
-              <span class="line-1 top-50"></span>
-              <span class="line-2 top-50"></span>
+    <div class="showcase">
+      <div class="container-fluid">
+        <div class="slides">
+          <div class="slide-img slide-img-1">
+            <div class="text-wrapper">
+              <h1>EXCELLENCE COCOA PURE</h1>
+              <p>
+                Discover the new, limited edition EXCELLENCE COCOA PURE made
+                100% from the cocoa fruit - with nothing else added, without
+                refined sugar.
+              </p>
+              <a class="showcaseButton" href="#">DISCOVER</a>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <form
-                class="search-form_mobile d-flex justify-content-between mt-5"
-              >
-                <select class="form-select bg-black text-white p-0">
-                  <option value="1">All</option>
-                  <option value="1">Denim</option>
-                  <option value="1">Men</option>
-                  <option value="1">Women</option>
-                </select>
-                <input type="text" placeholder="Search..." / id="search-input"
-                class="p-0" >
-                <button
-                  class="submit"
-                  type="submit"
-                  id="search-submit"
-                ></button>
-              </form>
+          <div class="slide-img slide-img-2">
+            <div class="text-wrapper">
+              <h1>Welcome to the World of Lindt Chocolate</h1>
+              <p>
+                Experience Lindt: the ultimate chocolate delight brought to you
+                by our passionate Master Chocolatiers. Since 1845, our exquisite
+                creations have provided moments of bliss for you to savour.
+              </p>
+              <a class="showcaseButton" href="#">DISCOVER</a>
+            </div>
+          </div>
+          <div class="slide-img slide-img-3">
+            <div class="text-wrapper">
+              <h1>Discover our Newest Creation</h1>
+              <p>
+                Conjured fresh from the kitchen, LINDOR Salted Caramel laces
+                smooth milk chocolate with buttery caramel and salt flakes to
+                create an enhanced bittersweet flavour.
+              </p>
+              <a class="showcaseButton" href="#">DISCOVER</a>
+            </div>
+          </div>
+          <div class="slide-img slide-img-4">
+            <div class="text-wrapper">
+              <h1>What is The Lindt Difference?</h1>
+              <p>
+                A combination of the highest quality ingredients, unrivalled
+                care and unparalleled skill that goes into crafting each
+                chocolate, and – most importantly – our chocolate’s smooth
+                texture and glossy finish. That is what makes us unique.
+              </p>
+              <a class="showcaseButton" href="#">DISCOVER</a>
+            </div>
+          </div>
+          <div class="radios">
+            <span class="radio" onclick="showImage(0)"></span>
+            <span class="radio" onclick="showImage(1)"></span>
+            <span class="radio" onclick="showImage(2)"></span>
+            <span class="radio" onclick="showImage(3)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="explore">
+      <div class="container-95">
+        <h2 class="title">Explore Our Chocolates</h2>
+
+        <div class="explore-cards">
+          <div class="card-1">
+            <div class="img-wrapper">
+              <img src="./assets/img/explore-1.jpg" alt="" />
+              <a class="showcaseButton cardButton" href="#">DISCOVER</a>
+            </div>
+            <h2 class="title card-title">Lindt LINDOR</h2>
+          </div>
+          <div class="card-2">
+            <div class="img-wrapper">
+              <img src="./assets/img/explore-2.jpg" alt="" />
+              <a class="showcaseButton cardButton" href="#">DISCOVER</a>
+            </div>
+            <h2 class="title card-title">Lindt EXCELLENCE</h2>
+          </div>
+          <div class="card-3">
+            <div class="img-wrapper">
+              <img src="./assets/img/explore-3.jpg" alt="" />
+              <a class="showcaseButton cardButton" href="#">DISCOVER</a>
+            </div>
+            <h2 class="title card-title">Gift Ideas</h2>
+          </div>
+          <div class="card-4">
+            <div class="img-wrapper">
+              <img src="./assets/img/explore-4.jpg" alt="" />
+              <a class="showcaseButton cardButton" href="#">DISCOVER</a>
+            </div>
+            <h2 class="title card-title">Lindt Pralines</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bestsellers">
+      <div class="container-90">
+        <h2 class="title">Best Sellers</h2>
+        <div class="list-wrapper">
+          <ul class="bestseller-list">
+            <li class="active">ALL</li>
+            <li>LINDOR</li>
+            <li>EXCELLENCE</li>
+            <li>GIFING</li>
+          </ul>
+        </div>
+
+        <div class="bestseller-cards-all">
+          <div class="bestseller-cards-inside">
+            <div class="card-wrapper">
+              <img src="./assets/img/gifting-1.png" alt="" />
+            </div>
+            <div class="card-wrapper">
+              <img src="./assets/img/gifting-2.png" alt="" />
+            </div>
+            <div class="card-wrapper">
+              <img src="./assets/img/gifting-3.png" alt="" />
+            </div>
+            <div class="card-wrapper">
+              <img src="./assets/img/gifting-4.png" alt="" />
+            </div>
+            <div class="card-wrapper">
+              <img src="./assets/img/gifting-5.png" alt="" />
             </div>
           </div>
         </div>
-        <ul class="list-unstyled py-3 m-0">
-          <li class="text-center my-4">
-            <a
-              href="#"
-              class="active text-decoration-none text-white mx-4 list-items"
-              >HOME
-            </a>
-          </li>
-          <li class="text-center my-4">
-            <a href="#" class="text-decoration-none text-white mx-4 list-items"
-              >WOMEN
-            </a>
-          </li>
-          <li class="text-center my-4">
-            <a href="#" class="text-decoration-none text-white mx-4 list-items"
-              >MEN
-            </a>
-          </li>
-          <li class="text-center my-4">
-            <a href="#" class="text-decoration-none text-white mx-4 list-items"
-              >DENIM
-            </a>
-          </li>
-          <li class="text-center mt-4">
-            <a href="#" class="text-decoration-none text-white mx-4 list-items"
-              >ARRIVALS</a
-            >
-          </li>
-        </ul>
-        <ul class="list-unstyled text-center">
-          <li>
-            <a
-              class="
-                text-black
-                nav-items
-                text-decoration-none text-white
-                mb-3
-                d-block
-              "
-              href="#"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a
-              class="
-                text-black
-                nav-items
-                text-decoration-none text-white
-                my-3
-                d-block
-              "
-              href="#"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              class="
-                text-black
-                nav-items
-                text-decoration-none text-white
-                my-3
-                d-block
-              "
-              href="#"
-              >Contact</a
-            >
-          </li>
-          <li>
-            <a
-              class="
-                text-black
-                nav-items
-                text-decoration-none text-white
-                my-3
-                d-block
-              "
-              href="#"
-              >Login</a
-            >
-          </li>
-        </ul>
-        <ul class="w-25 mx-auto list-unstyled d-flex justify-content-between">
-          <li class="icons">
-            <a href="#"><i class="fab fa-twitter text-white"></i></a>
-          </li>
-          <li class="icons">
-            <a href="#"><i class="fab fa-facebook text-white"></i></a>
-          </li>
-          <li class="icons">
-            <a href="#"><i class="fab fa-instagram text-white"></i></a>
-          </li>
-        </ul>
       </div>
     </div>
 
-    <div class="site-navbar bg-black">
-      <div class="container text-center">
-        <ul class="list-unstyled py-3 m-0">
-          <li class="d-inline-block">
-            <a
-              href="#"
-              class="active text-decoration-none text-white mx-4 list-items"
-              >HOME
-            </a>
-          </li>
-          <li class="d-inline-block">
-            <a href="#" class="text-decoration-none text-white mx-4 list-items"
-              >WOMEN
-            </a>
-          </li>
-          <li class="d-inline-block">
-            <a href="#" class="text-decoration-none text-white mx-4 list-items"
-              >MEN
-            </a>
-          </li>
-          <li class="d-inline-block">
-            <a href="#" class="text-decoration-none text-white mx-4 list-items"
-              >DENIM
-            </a>
-          </li>
-          <li class="d-inline-block">
-            <a href="#" class="text-decoration-none text-white mx-4 list-items"
-              >ARRIVALS</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="showcase py-5">
-      <div class="container-sp container-md py-5">
-        <h1 class="h1 w-50 display-5 fw-bold text-white">
-          NEW Denim Jackets In-stock Now
-        </h1>
-        <p class="text-white fs-4">Shop now and get 15% off your order</p>
-        <button
-          class="
-            btn btn-dark
-            text-capitalize
-            mt-4
-            rounded-0
-            bg-black
-            shopverify
-          "
-        >
-          shop now
-        </button>
-      </div>
-    </div>
+    <div class="story">
+      <div class="container-90">
+        <div class="story-inside">
+          <div class="top">
+            <img src="./assets/img/story-showcase.jpg" alt="" />
+            <div class="text-wrapper">
+              <h2 class="title">Our story</h2>
+              <p>
+                It all began in 1845 in a small confectionary shop in Zurich.
+                Here David Sprüngli-Schwarz and his son, Rudolf Sprüngli-Ammann
+                first produced chocolate in solid form. Since then our chocolate
+                has been continuously perfected, becoming what it is today:
+                creamy and rich. An incomparable taste.
+              </p>
 
-    <div class="products mt-5">
-      <div class="container">
-        <div class="row text-center">
-          <h1 class="h2 py-5">On Sale Products</h1>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-                <a
-                  class="
-                    d-inline-block
-                    text-white text-decoration-none
-                    fw-bold
-                    sale
-                  "
-                  >Sale!</a
-                >
-                <img
-                  class="img-fluid"
-                  src="./assets/img/product-2.jpg"
-                  alt=""
-                />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
+              <a class="showcaseButton buttonDark" href="#">READ MORE</a>
+            </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-                <a
-                  class="
-                    d-inline-block
-                    text-white text-decoration-none
-                    fw-bold
-                    sale
-                  "
-                  >Sale!</a
-                >
-                <img
-                  class="img-fluid"
-                  src="./assets/img/product-3.jpg"
-                  alt=""
-                />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
+          <div class="bottom">
+            <div class="text-wrapper">
+              <h2 class="title">Our Ethos</h2>
+              <p>
+                Quality doesn’t come from taste alone. At Lindt we pride
+                ourselves on knowing that our cocoa beans are sustainably and
+                ethically sourced. That’s why we implemented our own sustainable
+                sourcing model: The Lindt & Sprüngli Farming Program.
+              </p>
+
+              <a class="showcaseButton buttonDark" href="#">READ MORE</a>
+            </div>
+            <img src="./assets/img/ethos-showcase.jpg" alt="" />
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-                <a
-                  class="
-                    d-inline-block
-                    text-white text-decoration-none
-                    fw-bold
-                    sale
-                  "
-                  >Sale!</a
-                >
-                <img
-                  class="img-fluid"
-                  src="./assets/img/product-4.jpg"
-                  alt=""
-                />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
+
+          <div class="bake-location">
+            <div class="bake">
+              <h1>Bake With Us</h1>
+              <p>
+                Become inspired by our chocolate range and test some of our most
+                beloved recipes. Bake the Lindt Maître Chocolatier way and then
+                enjoy your creations!
+              </p>
+              <a class="showcaseButton" href="#">READ MORE</a>
+            </div>
+            <div class="location">
+              <h1>Bake With Us</h1>
+              <p>
+                Become inspired by our chocolate range and test some of our most
+                beloved recipes. Bake the Lindt Maître Chocolatier way and then
+                enjoy your creations!
+              </p>
+              <a class="showcaseButton" href="#">READ MORE</a>
+            </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-                <a
-                  class="
-                    d-inline-block
-                    text-white text-decoration-none
-                    fw-bold
-                    sale
-                  "
-                  >Sale!</a
-                >
-                <img
-                  class="img-fluid"
-                  src="./assets/img/product-1.jpg"
-                  alt=""
-                />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
+          <div class="everything">
+            <div class="text">
+              <h1>For Everything Chocolate</h1>
+              <p>
+                Experience our nine-metre tall chocolate fountain when you visit
+                us at the Lindt Home of Chocolate in Zürich, Switzerland.
+                Boasting interactive exhibits, a research facility and its very
+                own Chocolateria for chocolate courses, this is a memorable
+                outing for the whole family.
+              </p>
+              <a class="showcaseButton" href="#">READ MORE</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="category products mt-5">
-      <div class="container">
-        <div class="row text-center">
-          <h1 class="h2 py-5">Shop by Category</h1>
-          <div class="col-12 col-md-4 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
+    <div class="follow">
+      <h1 class="title">Follow @Lindt on Instagram #lindtlove</h1>
 
-                <img
-                  class="img-fluid"
-                  src="./assets/img/category-1.png"
-                  alt=""
-                />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
-          <div class="col-12 col-md-4 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-
-                <img
-                  class="img-fluid"
-                  src="./assets/img/category-2.png"
-                  alt=""
-                />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
-          <div class="col-12 col-md-4 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-
-                <img
-                  class="img-fluid"
-                  src="./assets/img/category-3.png"
-                  alt=""
-                />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
+      <div class="follow-images">
+        <div class="img-1">
+          <img src="./assets/img/follow-1.jpg" alt="" />
+        </div>
+        <div class="img-2">
+          <img src="./assets/img/follow-2.jpg" alt="" />
+        </div>
+        <div class="img-3">
+          <img src="./assets/img/follow-3.jfif" alt="" />
+        </div>
+        <div class="img-4">
+          <img src="./assets/img/follow-4.jpg" alt="" />
+        </div>
+        <div class="img-5">
+          <img src="./assets/img/follow-5.jpg" alt="" />
+        </div>
+        <div class="img-6">
+          <img src="./assets/img/follow-6.jpg" alt="" />
         </div>
       </div>
     </div>
 
-    <div class="products mt-5">
-      <div class="container">
-        <div class="row text-center">
-          <h1 class="h2 py-5">Top-rated Products</h1>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-                <a
-                  class="
-                    d-inline-block
-                    text-white text-decoration-none
-                    fw-bold
-                    sale
-                  "
-                  >Sale!</a
-                >
-                <img class="img-fluid" src="./assets/img/top-2.jpg" alt="" />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-                <a
-                  class="
-                    d-inline-block
-                    text-white text-decoration-none
-                    fw-bold
-                    sale
-                  "
-                  >Sale!</a
-                >
-                <img class="img-fluid" src="./assets/img/top-3.jpg" alt="" />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-                <a
-                  class="
-                    d-inline-block
-                    text-white text-decoration-none
-                    fw-bold
-                    sale
-                  "
-                  >Sale!</a
-                >
-                <img class="img-fluid" src="./assets/img/top-4.jpg" alt="" />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-                <a
-                  class="
-                    d-inline-block
-                    text-white text-decoration-none
-                    fw-bold
-                    sale
-                  "
-                  >Sale!</a
-                >
-                <img class="img-fluid" src="./assets/img/top-1.jpg" alt="" />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
+    <footer>
+      <div class="container-95">
+        <div class="footer-lists">
+          <ul>
+            <li class="footertitle title">SUSTAINABILITY</li>
+            <li><a href="#">Lindt Farming Program</a></li>
+            <li><a href="#">Lindt Corporate</a></li>
+          </ul>
+          <ul>
+            <li class="footertitle title">RECIPES & PAIRINGS</li>
+            <li><a href="#">Chocolate Recipes</a></li>
+            <li><a href="#">Pairings</a></li>
+          </ul>
+          <ul>
+            <li class="footertitle title">THE LINDT DIFFERENCE</li>
+            <li><a href="#">The Finest Cocoa</a></li>
+            <li><a href="#">Unique Roasting and Grinding</a></li>
+            <li><a href="#">Conching - The Lindt Invention</a></li>
+            <li><a href="#">The Best Ingredients</a></li>
+            <li><a href="#">Finishing With Perfection</a></li>
+            <li><a href="#">Master Chocolatier</a></li>
+          </ul>
+          <ul>
+            <li class="footertitle title">LINDT HISTORY</li>
+            <li><a href="#">Lindt History</a></li>
+            <li><a href="#">Gold Bunny History</a></li>
+            <li><a href="#">Lindor History</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-
-    <div class="category products mt-5">
-      <div class="container">
-        <div class="row text-center">
-          <h1 class="h2 py-5">Shop by Category</h1>
-          <div class="col-12 col-md-4">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-
-                <img
-                  class="img-fluid"
-                  src="./assets/img/product-1.jpg"
-                  alt=""
-                />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
-          <div class="col-12 col-md-4">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-
-                <img class="img-fluid" src="./assets/img/top-4.jpg" alt="" />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
-          <div class="col-12 col-md-4">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-
-                <img
-                  class="img-fluid"
-                  src="./assets/img/lastest-3.jpg"
-                  alt=""
-                />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="products mt-5">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-                <a
-                  class="
-                    d-inline-block
-                    text-white text-decoration-none
-                    fw-bold
-                    sale
-                  "
-                  >Sale!</a
-                >
-                <img
-                  class="img-fluid"
-                  src="./assets/img/product-2.jpg"
-                  alt=""
-                />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-                <a
-                  class="
-                    d-inline-block
-                    text-white text-decoration-none
-                    fw-bold
-                    sale
-                  "
-                  >Sale!</a
-                >
-                <img class="img-fluid" src="./assets/img/top-1.jpg" alt="" />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-                <a
-                  class="
-                    d-inline-block
-                    text-white text-decoration-none
-                    fw-bold
-                    sale
-                  "
-                  >Sale!</a
-                >
-                <img class="img-fluid" src="./assets/img/top-4.jpg" alt="" />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
-            <a href="#" class="text-decoration-none text-black">
-              <div class="wrapper position-relative">
-                <div class="whitebg"></div>
-                <a
-                  class="
-                    d-inline-block
-                    text-white text-decoration-none
-                    fw-bold
-                    sale
-                  "
-                  >Sale!</a
-                >
-                <img
-                  class="img-fluid"
-                  src="./assets/img/lastest-last.jpg"
-                  alt=""
-                />
-              </div>
-              <p class="mt-2 mb-1">Pin-striped Overalls</p>
-              <del class="text-secondary">$85.0</del>
-              <i>$72.00</i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer mt-5 bg-black p-3 text-center text-white">
-      <a href="#" class="fw-bold text-decoration-none text-white wordpress"
-        >Modern Store WordPress Theme</a
-      >
-      by Compete Themes.
-    </div>
-
-    <script src="./assets/js/script.js"></script>
+    </footer>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
