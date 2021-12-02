@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.db0e0643.chunk.css",
-    "main.js": "/static/js/main.1e62a1dc.chunk.js",
-    "main.js.map": "/static/js/main.1e62a1dc.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0ea5ea4d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0ea5ea4d.js.map",
+    "main.css": "/static/css/main.e962bb69.chunk.css",
+    "main.js": "/static/js/main.4c340f6e.chunk.js",
+    "main.js.map": "/static/js/main.4c340f6e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.05d7fdcc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.05d7fdcc.js.map",
     "static/css/2.383c0125.chunk.css": "/static/css/2.383c0125.chunk.css",
-    "static/js/2.6d60d4f0.chunk.js": "/static/js/2.6d60d4f0.chunk.js",
-    "static/js/2.6d60d4f0.chunk.js.map": "/static/js/2.6d60d4f0.chunk.js.map",
-    "static/js/3.146d0a8d.chunk.js": "/static/js/3.146d0a8d.chunk.js",
-    "static/js/3.146d0a8d.chunk.js.map": "/static/js/3.146d0a8d.chunk.js.map",
+    "static/js/2.204c88e5.chunk.js": "/static/js/2.204c88e5.chunk.js",
+    "static/js/2.204c88e5.chunk.js.map": "/static/js/2.204c88e5.chunk.js.map",
+    "static/js/3.e514c7e4.chunk.js": "/static/js/3.e514c7e4.chunk.js",
+    "static/js/3.e514c7e4.chunk.js.map": "/static/js/3.e514c7e4.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.383c0125.chunk.css.map": "/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.db0e0643.chunk.css.map": "/static/css/main.db0e0643.chunk.css.map",
-    "static/js/2.6d60d4f0.chunk.js.LICENSE.txt": "/static/js/2.6d60d4f0.chunk.js.LICENSE.txt",
+    "static/css/main.e962bb69.chunk.css.map": "/static/css/main.e962bb69.chunk.css.map",
+    "static/js/2.204c88e5.chunk.js.LICENSE.txt": "/static/js/2.204c88e5.chunk.js.LICENSE.txt",
     "static/media/Otis_OurCompany_careers_bottom_page_link_image.c8c30666.jpg": "/static/media/Otis_OurCompany_careers_bottom_page_link_image.c8c30666.jpg",
     "static/media/Otis_OurCompany_newsroom_link_image.024a1701.jpg": "/static/media/Otis_OurCompany_newsroom_link_image.024a1701.jpg",
     "static/media/news.style.scss": "/static/media/Press-Release-us-bg_blank_updated.b037cff7.jpg",
@@ -50,7 +50,7 @@
     "static/media/productItem2.a6f9ca00.jpg": "/static/media/productItem2.a6f9ca00.jpg",
     "static/media/productItem3.62bd24f9.jpg": "/static/media/productItem3.62bd24f9.jpg",
     "static/media/productItem5.78ea8ea3.jpg": "/static/media/productItem5.78ea8ea3.jpg",
-    "static/media/productsBackground.e827bd64.jpg": "/static/media/productsBackground.e827bd64.jpg",
+    "static/media/Products.style.scss": "/static/media/productsBackground.e827bd64.jpg",
     "static/media/secondCarusel-slide-1.ae5f6ea3.jpg": "/static/media/secondCarusel-slide-1.ae5f6ea3.jpg",
     "static/media/secondCarusel-slide-2.ecee2c67.jpg": "/static/media/secondCarusel-slide-2.ecee2c67.jpg",
     "static/media/secondCarusel-slide-3.d4da641e.jpg": "/static/media/secondCarusel-slide-3.d4da641e.jpg",
@@ -67,13 +67,13 @@
     "static/media/slide-img-6.62b104a0.jpg": "/static/media/slide-img-6.62b104a0.jpg",
     "static/media/stadiumHeaderBackground.5fbd6ac9.jpg": "/static/media/stadiumHeaderBackground.5fbd6ac9.jpg",
     "static/media/tools_OB.bdab0d4c.jpg": "/static/media/tools_OB.bdab0d4c.jpg",
-    "static/media/usageAreasBackground.aeb5d575.jpg": "/static/media/usageAreasBackground.aeb5d575.jpg"
+    "static/media/UsageAreas.style.scss": "/static/media/usageAreasBackground.aeb5d575.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0ea5ea4d.js",
+    "static/js/runtime-main.05d7fdcc.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.6d60d4f0.chunk.js",
-    "static/css/main.db0e0643.chunk.css",
-    "static/js/main.1e62a1dc.chunk.js"
+    "static/js/2.204c88e5.chunk.js",
+    "static/css/main.e962bb69.chunk.css",
+    "static/js/main.4c340f6e.chunk.js"
   ]
 }
