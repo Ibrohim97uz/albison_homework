@@ -4,100 +4,304 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .site-btn {
-        position: fixed;
-        right: 30px;
-        top: 50%;
-        border: none;
-      }
-      .site-btn a {
-        background-color: #000;
-        color: #fff;
-        text-transform: uppercase;
-        padding: 10px;
-        transition: 0.5s;
-        text-decoration: none;
-      }
-      .site-btn a:hover {
-        background-color: green;
-        cursor: pointer;
-      }
-    </style>
+    <title>Albison Academy</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <h1>HRM</h1>
-    <ul>
-      <li><a href="./aboutUs.html">About Us</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-      <li><a href="./register.html">Register</a></li>
+    <ul type="none" class="nav-links-mobile">
+      <li><a href="#">Asosiy</a></li>
+      <li><a href="#superiorities">Ustunliklar</a></li>
+      <li><a href="#our-courses">Kurslar</a></li>
+      <li><a href="#partners">Hamkorlar</a></li>
     </ul>
-    <img src="./img/46640476.webp" alt="" />
-    <h2>Welcome to HRM hotel</h2>
-    <h4>The place where you can forget any problem!</h4>
-    <p>
-      We have more than 15 branches amongt the world. Almost all our guests said
-      nice...
-    </p>
-    <br />
-    <a href="#">Read more</a>
-    <h1>We Give You The Best Comfort Ever!</h1>
-    <p>Do you want to know WHY?</p>
-    <br />
-    <a href="#">Learn more</a>
-    <h1>Our price<sub>(per day)</sub></h1>
-    <table border="1px" style="border-collapse: collapse">
-      <thead>
-        <tr>
-          <th>Count of Rooms</th>
-          <th>Count of Bathrooms</th>
-          <th>Kitchen Appliences</th>
-          <th>Linens</th>
-          <th>Price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td rowspan="3">1</td>
-          <td>1</td>
-          <td><input type="checkbox" checked disabled /></td>
-          <td><input type="checkbox" checked disabled /></td>
-          <td>100$</td>
-        </tr>
 
-        <tr>
-          <td>1</td>
-          <td><input type="checkbox" disabled /></td>
-          <td><input type="checkbox" disabled /></td>
-          <td>100$</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td><input type="checkbox" checked disabled /></td>
-          <td><input type="checkbox" disabled /></td>
-          <td>100$</td>
-        </tr>
-        <tr>
-          <td rowspan="3">2</td>
-          <td>1</td>
-          <td><input type="checkbox" disabled /></td>
-          <td><input type="checkbox" disabled /></td>
-          <td>100$</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td><input type="checkbox" checked disabled /></td>
-          <td><input type="checkbox" checked disabled /></td>
-          <td>100$</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td><input type="checkbox" checked disabled /></td>
-          <td><input type="checkbox" disabled /></td>
-          <td>100$</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="menu-icon">
+      <span class="line-1"></span>
+      <span class="line-2"></span>
+      <span class="line-3"></span>
+    </div>
+
+    <div class="header">
+      <div class="navbar">
+        <div class="container align-items-center">
+          <a class="logo" href="#">
+            <img
+              class="logo-large"
+              src="./assets/img/logotype.png"
+              alt="Albison Academy"
+            />
+            <img
+              class="logo-little"
+              src="./assets/img/logo-little.png"
+              alt="Albison Academy"
+            />
+          </a>
+          <ul class="nav-links">
+            <li><a href="#">Asosiy</a></li>
+            <li><a href="#superiorities">Ustunliklar</a></li>
+            <li><a href="#our-courses">Kurslar</a></li>
+            <li><a href="#partners">Hamkorlar</a></li>
+          </ul>
+          <a href="footer" class="connect-button">Bog’lanish</a>
+        </div>
+      </div>
+
+      <div class="showcase">
+        <div class="container">
+          <div class="chowcase-inside">
+            <div class="left">
+              <div class="texts">
+                <h1 class="showcase-title">
+                  DASTURLASH BILAN MARRA SIZNIKI BO'LADI.
+                </h1>
+                <p class="showcase-text">
+                  Endi dasturchi bo’lishni niyat qilgan yoki dasturlash
+                  kurslarini yakunlab ish topishga qiynalayotganlar uchun
+                  Albison Akademyasi tomonidan dunyoning eng mashxur o’quv
+                  kurslari asosida yaratilgan mukammal dasturlari va ish topish
+                  imkonyatlarini taqdim etadi.
+                </p>
+                <div class="showcase-buttons">
+                  <a href="#" class="register">Ro’yxatdan o’tish</a>
+                  <a href="#" class="all-courses">Barcha kurslar</a>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="background"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="superiorities" class="superiorities">
+      <div class="container">
+        <h1 class="superiorities__inside-title">
+          Bizning ustunlik tomonlarimiz
+        </h1>
+        <div class="superiorities__inside">
+          <div class="superiorities__background-wrapper">
+            <div class="background"></div>
+          </div>
+
+          <div class="superiorities__inside--text">
+            <div>
+              <b>Kod yozishni tartib bilan o'rganish</b>
+              <br />
+              <p>
+                Tajribali o'qituvchilarimiz tomonidan yasalgan o'quv rejalari
+                ostida kod yozishni o'rganish yanada osonroq!
+              </p>
+            </div>
+
+            <div>
+              <b>Kuchli portfolio</b>
+              <br />
+              <p>
+                O'quv jarayonida kelajakda as qotadigan kuchli portfoliolar
+                yasab yurish imkoniyati!
+              </p>
+            </div>
+
+            <div>
+              <b>Ish topishga yordam</b>
+              <br />
+              <p>
+                Kurslarimizni yaxshi darajada tamomlagan o'quvchilarni ish
+                topishlariga ko'malashish!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="our-courses" class="our-courses">
+      <div class="container">
+        <h1 class="our-courses__title">Bizning kurslarimiz</h1>
+
+        <div class="our-courses__cards">
+          <div class="card-1">
+            <h3>Web Dizayn kurslari</h3>
+            <span>
+              <img src="./assets/icons/adobe-xd.svg" alt="" />
+              <p>Adobe XD</p>
+            </span>
+            <span>
+              <img src="./assets/icons/figma.svg" alt="" />
+              <p>Figma</p>
+            </span>
+            <span>
+              <img src="./assets/icons/conceptsOfDesign.svg" alt="" />
+              <p>Concepts of Design</p>
+            </span>
+            <span>
+              <img src="./assets/icons/branding.svg" alt="" />
+              <p>Branding</p>
+            </span>
+            <span>
+              <img src="./assets/icons/userInterface.svg" alt="" />
+              <p>User Experience</p>
+            </span>
+            <span>
+              <img src="./assets/icons/userExperience.svg" alt="" />
+              <p>User Interface</p>
+            </span>
+          </div>
+          <div class="card-2">
+            <h3>Frontend kurslari</h3>
+            <span>
+              <img src="./assets/icons/html.svg" alt="" />
+              <p>HTML/CSS</p>
+            </span>
+            <span>
+              <img src="./assets/icons/sass.svg" alt="" />
+              <p>SASS/Bootstrap</p>
+            </span>
+            <span>
+              <img src="./assets/icons/javascript.svg" alt="" />
+              <p>JavaScript</p>
+            </span>
+            <span>
+              <img src="./assets/icons/npm.svg" alt="" />
+              <p>NPM</p>
+            </span>
+            <span>
+              <img src="./assets/icons/react.svg" alt="" />
+              <p>React</p>
+            </span>
+            <span>
+              <img src="./assets/icons/git.svg" alt="" />
+              <p>Git</p>
+            </span>
+          </div>
+          <div class="card-3">
+            <h3>Ingliz tili kurslari</h3>
+            <span>
+              <img src="./assets/icons/intro.svg" alt="" />
+              <p>Intro</p>
+            </span>
+            <span>
+              <img src="./assets/icons/basic-englis.png" alt="" />
+              <p>Basics</p>
+            </span>
+            <span>
+              <img src="./assets/icons/topic-english.png" alt="" />
+              <p>Topics</p>
+            </span>
+            <span>
+              <img src="./assets/icons/world-list.png" alt="" />
+              <p>Word Lists</p>
+            </span>
+            <span>
+              <img src="./assets/icons/reading-documents.png" alt="" />
+              <p>Docs reading</p>
+            </span>
+            <span>
+              <img src="./assets/icons/listening-documents.png" alt="" />
+              <p>Listening</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="partners" class="partners">
+      <h1 class="partners__title">Bizning hamkorlarimiz</h1>
+
+      <div class="container">
+        <div class="partners__inner">
+          <a href="https://mitc.uz/en" target="_blank">
+            <img src="./assets/img/MiTC-removebg-preview.png" alt="" />
+          </a>
+          <a href="https://www.ark-logistics.uz/">
+            <img src="./assets/img/ark-logistics.png" alt="" />
+          </a>
+          <a href="https://aparto.uz/" target="_blank">
+            <img src="./assets/img/aparto.svg" alt="" />
+          </a>
+          <a href="https://veva.uz/" target="_blank">
+            <img src="./assets/img/veva.svg" alt="" />
+          </a>
+          <a href="https://www.betaliftasia.com/" target="_blank">
+            <img src="./assets/img/beta.png" alt="" />
+          </a>
+          <a href="https://ccse.uz/" target="_blank">
+            <img src="./assets/img/dereksiya.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="register" class="register">
+      <div class="container">
+        <div class="register-inside">
+          <h1 class="register__title">Ro’yxatdan o’tish</h1>
+          <form action="#">
+            <div>
+              <input type="text" placeholder="Sizning ismingiz" />
+              <input type="text" placeholder="Sizning telefon raqaminigiz" />
+              <input type="email" placeholder="Sizning emailingiz" />
+              <input type="text" placeholder="Tanlagan kurs nomi" />
+            </div>
+            <a class="connect-button">Bog’lanish</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="container">
+        <div class="footer-inside">
+          <a class="logo-footer" href="#">
+            <img src="./assets/img/logotype.png" alt="Albison Academy" />
+          </a>
+
+          <a class="logo-footer-circle" href="#">
+            <img src="./assets/img/logo-circle.png" alt="Albison Academy" />
+          </a>
+
+          <div class="numbers">
+            <a href="tel:+998 88 123 80 80">+998 88 123 80 80</a>
+            <a href="tel:+998 88 123 80 80">+998 88 123 80 80</a>
+            <a href="tel:+998 88 123 80 80">+998 88 123 80 80</a>
+          </div>
+        </div>
+        <hr />
+        <div class="bottom">
+          <span>Copyright © 2021, Albison.</span>
+          <div class="icons">
+            <a target="_blank" href="https://telegram.org">
+              <img src="./assets/icons/telegram.svg" alt="telegram" />
+            </a>
+            <a target="_blank" href="https://instagram.com">
+              <img src="./assets/icons/instagram.svg" alt="instagram" />
+            </a>
+            <a target="_blank" href="https://facebook.com">
+              <img src="./assets/icons/facebook.svg" alt="facebook" />
+            </a>
+            <a target="_blank" href="https://youtube.com">
+              <img src="./assets/icons/youtube.svg" alt="youtube" />
+            </a>
+            <a target="_blank" href="https://tiktok.com">
+              <img src="./assets/icons/tiktok-icon-2.svg" alt="tiktok" />
+            </a>
+            <a target="_blank" href="https://gmail.com">
+              <img src="./assets/icons/gmail.svg" alt="google mail" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
